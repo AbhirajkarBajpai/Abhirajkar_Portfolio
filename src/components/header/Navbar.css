@@ -1,8 +1,9 @@
 .Navbar{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 2.75rem 6rem;
+  width: 100vw;
 }
 
 .navbar-container {
