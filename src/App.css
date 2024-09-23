@@ -30,10 +30,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 9rem;
+  width: 10rem;
   height: 2.5rem;
   border: 0px;
-  border-radius: .8rem;
+  border-radius: 1.5rem;
   top: 50%;
   right: -70%;
   background-color: #fff;
@@ -63,6 +63,10 @@
 }
 
 .project-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5vw;
   margin-top: 4vh;
   width: 12vw;
   height: 6vh;

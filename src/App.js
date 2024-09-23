@@ -1,6 +1,9 @@
 import "./App.css";
 import Navbar from "./components/header/Navbar";
 import Profile_Pic from "./assets/img/Ab.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import MovingExperience from "./components/MovingExperience";
 
 function App() {
   return (
@@ -11,7 +14,7 @@ function App() {
           <div className="PN_cont">
             <img src={Profile_Pic} alt="Profile" className="profile-pic" />
             <div className="name_cont">
-              <span className="name_header">Abhirajkar Bajpai</span>
+              <span className="name_header">Abhirajkar Bajpai 👋</span>
             </div>
           </div>
           <span className="Headling_about">
@@ -28,9 +31,11 @@ function App() {
             }
           >
             Latest Project
+            <FontAwesomeIcon icon={faGithub} size="2x" />
           </button>
         </div>
       </div>
+      <MovingExperience />
     </div>
   );
 }
