@@ -4,10 +4,12 @@ import Profile_Pic from "./assets/img/Ab.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import MovingExperience from "./components/MovingExperience";
+import CursorDot from "./components/CursorDot";
 
 function App() {
   return (
     <div className="App">
+      <CursorDot/>
       <div className="home">
         <Navbar />
         <div className="profile-section">
