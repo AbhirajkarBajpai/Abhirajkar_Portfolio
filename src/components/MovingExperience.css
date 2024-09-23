@@ -1,20 +1,22 @@
 .experience-container {
     width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
     overflow: hidden;
-    background-color: #f0f0f0; /* Adjust background as needed */
   }
   
   .company-list {
     display: inline-block;
     white-space: nowrap;
-    animation: scroll 20s linear infinite;
+    animation: scroll 35s linear infinite;
   }
   
   .company {
     display: inline-block;
     padding: 0 5rem;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 2.6rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #333;
   }
   
