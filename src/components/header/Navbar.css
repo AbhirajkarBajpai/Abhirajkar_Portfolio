@@ -1,0 +1,61 @@
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .email-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+    background-color: #3EEE5F;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 2rem;
+    padding:.05rem;
+  }
+
+  .email-section span{
+    font-size: small;
+    margin-left: .45rem;
+  }
+  
+  .copy-btn {
+    height: 2.7rem;
+    width: 6rem;
+    border-radius: 2rem;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .copy-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .cv-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3EEE5F;
+    height: auto;
+    width:auto;
+    padding:.2rem;
+    border-radius: 2rem;
+  }
+  
+  .cv-btn {
+    height: 2.7rem;
+    width: 6rem;
+    border-radius: 2rem;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cv-btn:hover {
+    background-color: #218838;
+  }
+  
