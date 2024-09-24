@@ -11,7 +11,7 @@ function SkillsSection() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.intersectionRatio > 0) {
-            const scaleValue = 0.7 + entry.intersectionRatio * (1 - 0.7);
+            const scaleValue = 0.6 + entry.intersectionRatio * (1 - 0.6);
             section.style.transform = `scale(${scaleValue})`;
           }
         });
