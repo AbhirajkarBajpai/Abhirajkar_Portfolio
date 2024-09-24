@@ -63,6 +63,22 @@
 .skill-card:hover {
   transform: scale(1.05);
 }
+.skill_serial{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin: 1vh;
+    width: 90%;
+}
+.skill_serial span{
+    font-size: large;
+    font-weight: 600;
+}
+.skill_serial hr {
+    flex-grow: 1; 
+    border: none; 
+    border-top: 2px solid #000; 
+  }
 
 .skill-card h2 {
   font-size: 2rem;

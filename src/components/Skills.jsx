@@ -42,16 +42,19 @@ function SkillsSection() {
       <div className="skills-container">
       <div className="skill-card">
           <span role="img" aria-label="web-development" className="emoji">💻</span>
+          <div className='skill_serial'><span>01</span><hr/></div>
           <h2>Web Development</h2>
           <p>Building interactive and responsive websites. Utilise framwork such as React, Next for Frontend and Node , Express for Backend</p>
         </div>
         <div className="skill-card">
           <span role="img" aria-label="photography" className="emoji">📸</span>
+          <div className='skill_serial'><span>02</span><hr/></div>
           <h2>Photography</h2>
           <p>Capture moments with precision and creativity. trying some cinematic shots, color Grading and after Effect.</p>
         </div>
         <div className="skill-card">
           <span role="img" aria-label="blockchain" className="emoji">🔗</span>
+          <div className='skill_serial'><span>03</span><hr/></div>
           <h2>Blockchain</h2>
           <p>Exploring decentralized solutions with blockchain technology. Developed Notable Dapps using Ethereum Network, worked with Solidity, ether.js and Tools like Ganache</p>
         </div>
