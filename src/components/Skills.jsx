@@ -33,10 +33,29 @@ function SkillsSection() {
   }, []);
 
   return (
-    <section id="skills" className="skills-section" ref={sectionRef}>
-      <h2>My Skills</h2>
-      <p>Details about your skills here...</p>
-    </section>
+      <div id="skills" className="skills-section" ref={sectionRef}>
+      <div className="header">
+        <span role="img" aria-label="skills-icon" className="emoji">💼</span>
+        <h1>Skills</h1>
+      </div>
+      <div className="skills-container">
+        <div className="skill-card">
+          <span role="img" aria-label="photography" className="emoji">📸</span>
+          <h2>Photography</h2>
+          <p>Capture moments with precision and creativity.</p>
+        </div>
+        <div className="skill-card">
+          <span role="img" aria-label="web-development" className="emoji">💻</span>
+          <h2>Web Development</h2>
+          <p>Building interactive and responsive websites.</p>
+        </div>
+        <div className="skill-card">
+          <span role="img" aria-label="blockchain" className="emoji">🔗</span>
+          <h2>Blockchain</h2>
+          <p>Exploring decentralized solutions with blockchain technology.</p>
+        </div>
+      </div>
+    </div>
   );
 }
 
