@@ -1,11 +1,13 @@
 .skills-section {
   height: 100%;
-  width: 89vw;
+  width: 80vw;
   transform: scale(0.7);
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   text-align: center;
   padding: 2rem;
-  background-color: #f7f7f7;
+  border: 0px;
+  border-radius: 2.5rem;
+  background-color: #e3c7c7;
 }
 
 .skills-section.in-view {
@@ -17,29 +19,35 @@
 }
 
 .header h1 {
-  font-size: 2.5rem;
+  font-size: 4.5rem;
   color: #123456; /* Change this to match your theme */
 }
 
+.emoji_main {
+  font-size: 4rem;
+}
 .emoji {
-  font-size: 3rem;
+  font-size: 6rem;
 }
 
 .skills-container {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 2rem;
 }
 
 .skill-card {
   background-color: #e0f7fa;
   padding: 1.5rem;
   border-radius: 10px;
-  flex-basis: 30%;
+  /* flex-basis: 30%; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  text-align: left;
   transition: transform 0.3s ease-in-out;
+  height: 90%;
+  width: 25%;
 }
 
 .skill-card:hover {
@@ -47,13 +55,15 @@
 }
 
 .skill-card h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 1rem 0;
   color: #00796b;
 }
 
 .skill-card p {
-  font-size: 1rem;
+  font-size: 1.15rem;
+  width: 95%;
+  line-height: 175%;
   color: #004d40;
 }
 
