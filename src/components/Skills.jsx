@@ -3,7 +3,7 @@ import './Skills.css';
 function SkillsSection() {
     // Reference : https://alvarotrigo.com/blog/css-animations-scroll/
   const sectionRef = useRef(null);
-  const DynamicLink = ({ word }) => {
+  const DynamicSkill = ({ word }) => {
     return (
       <a href="" className="skill_a hover-shadow hover-color">
         {word.split('').map((letter, index) => (
@@ -52,19 +52,19 @@ function SkillsSection() {
       <div className="skill-card">
           <span role="img" aria-label="web-development" className="emoji">💻</span>
           <div className='skill_serial'><span>01</span><hr/></div>
-          <DynamicLink word='Web Development'/>
+          <DynamicSkill word='Web Development'/>
           <p>Building interactive and responsive websites. Utilise framwork such as React, Next for Frontend and Node , Express for Backend</p>
         </div>
         <div className="skill-card">
           <span role="img" aria-label="photography" className="emoji">📸</span>
           <div className='skill_serial'><span>02</span><hr/></div>
-          <DynamicLink word='Photography'/>
+          <DynamicSkill word='Photography'/>
           <p>Capture moments with precision and creativity. trying some cinematic shots, color Grading and after Effect.</p>
         </div>
         <div className="skill-card">
           <span role="img" aria-label="blockchain" className="emoji">🔗</span>
           <div className='skill_serial'><span>03</span><hr/></div>
-          <DynamicLink word='Blockchain'/>
+          <DynamicSkill word='Blockchain'/>
           <p>Exploring decentralized solutions with blockchain technology. Developed Notable Dapps using Ethereum Network, worked with Solidity, ether.js and Tools like Ganache</p>
         </div>
       </div>
