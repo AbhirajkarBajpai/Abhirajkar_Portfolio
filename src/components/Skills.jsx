@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import './Skills.css';
 function SkillsSection() {
+    // Reference : https://alvarotrigo.com/blog/css-animations-scroll/
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -10,14 +11,13 @@ function SkillsSection() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.intersectionRatio > 0) {
-            // Calculate the scale based on the percentage of the element visible in the viewport
             const scaleValue = 0.7 + entry.intersectionRatio * (1 - 0.7);
             section.style.transform = `scale(${scaleValue})`;
           }
         });
       },
       {
-        threshold: Array.from(Array(101).keys(), (i) => i / 100), // Create an array of thresholds from 0 to 1 with 0.01 intervals
+        threshold: Array.from(Array(101).keys(), (i) => i / 100),
       }
     );
 
