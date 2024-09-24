@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import MovingExperience from "./components/MovingExperience";
 import Cursor from "./components/CursorDot";
+import SkillsSection from "./components/Skills";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         </div>
       </div>
       <MovingExperience />
+      <SkillsSection/>
     </div>
   );
 }

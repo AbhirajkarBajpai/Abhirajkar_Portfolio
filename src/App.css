@@ -1,3 +1,9 @@
+.App{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .home {
   display: flex;
   flex-direction: column;

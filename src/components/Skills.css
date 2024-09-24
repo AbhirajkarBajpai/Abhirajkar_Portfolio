@@ -1,0 +1,12 @@
+.skills-section {
+    background-color: aquamarine;
+    height: 50vh;
+    width:89vw;
+    transform: scale(0.7); 
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out; /* Smooth transition */
+  }
+  
+  .skills-section.in-view {
+    transform: scale(1); 
+  }
+  
