@@ -4,7 +4,7 @@ import './CursorDot.css';
 const Cursor = () => {
   const dotRef = useRef(null);
   const outlineRef = useRef(null);
-  const delay = 8;
+  const delay = 15;
   let _x = 0, _y = 0;
   let endX = window.innerWidth / 2, endY = window.innerHeight / 2;
   let cursorVisible = true;
