@@ -33,6 +33,7 @@ function SkillsSection() {
   }, []);
 
   return (
+    <div className='skill_container'>
       <div id="skills" className="skills-section" ref={sectionRef}>
       <div className="header">
         <span role="img" aria-label="skills-icon" className="emoji_main">💼</span>
@@ -55,7 +56,7 @@ function SkillsSection() {
           <p>Exploring decentralized solutions with blockchain technology. Developed Notable Dapps using Ethereum Network, worked with Solidity, ether.js and Tools like Ganache</p>
         </div>
       </div>
-    </div>
+    </div></div>
   );
 }
 
