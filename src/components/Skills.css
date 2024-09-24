@@ -80,11 +80,68 @@
     border-top: 2px solid #000; 
   }
 
-.skill-card h2 {
+/* .skill-card h2 {
   font-size: 2rem;
   margin: 1rem 0;
   color: #00796b;
+} */
+
+/* text hover effect starts here  */
+.skill_a {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #00796b;
+  text-decoration: none;
 }
+
+.skill_a span {
+  font-weight: 100;
+  transition: all 0.5s;
+}
+
+.skill_a span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.skill_a span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.skill_a span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.skill_a:hover span {
+  font-weight: 700;
+}
+
+.skill_a:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+
+.skill_a:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+.skill_a:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.skill_a:hover span:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.skill_a.hover-shadow:hover {
+  color: #000;
+  text-shadow: 1px 1px 0px #ddd, 2px 2px 0px #ddd, 3px 3px 0px #ddd;
+}
+
+.skill_a.hover-color:hover {
+  color: #000;
+  border-color: darkmagenta;
+}
+
+/* text hover effect ends  */
 
 .skill-card p {
   font-size: 1.15rem;
