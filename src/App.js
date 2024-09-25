@@ -6,6 +6,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import MovingExperience from "./components/MovingExperience";
 import Cursor from "./components/CursorDot";
 import SkillsSection from "./components/Skills";
+import Education from "./components/Education/Education";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
       </div>
       <MovingExperience />
       <SkillsSection/>
+      <Education/>
     </div>
   );
 }
