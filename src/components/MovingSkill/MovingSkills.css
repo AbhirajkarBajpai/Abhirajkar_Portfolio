@@ -1,0 +1,140 @@
+.moving-skills-container {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6vh;
+  background-color: black;
+}
+.moving-skills-container span {
+  font-size: 2.5vh;
+  font-weight: bold;
+  /* margin-left: 4vw; */
+  color: #fff;
+}
+
+.animate-right-to-left {
+  margin: auto;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  margin: 1vh;
+}
+
+.skills-row-contentRL {
+  display: flex;
+  gap: 1vh;
+  width: calc(21rem * 20);
+  animation: scroll 40s linear infinite;
+}
+
+.skills-row-contentRL:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-21rem * 10));
+  }
+}
+
+.animate-left-to-right {
+  margin: auto;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  margin: 1vh;
+}
+
+.skills-row-contentLR {
+  display: flex;
+  width: calc(21rem * 20);
+  animation: scroll2 40s linear infinite;
+  gap: 1vh;
+}
+
+.skills-row-contentLR:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(calc(-21rem * 10));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+  .moving-skills-container {
+    height: 60vh;
+  }
+  .skills-row-contentRL {
+    width: calc(34vw * 20);
+    animation: scroll 40s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-34vw * 10));
+    }
+  }
+
+  .skills-row-contentLR {
+    width: calc(34vw * 20);
+    animation: scroll2 40s linear infinite;
+  }
+
+  @keyframes scroll2 {
+    0% {
+      transform: translateX(calc(-34vw * 10));
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+
+
+@media (max-width: 500px) {
+  .moving-skills-container {
+    height: 60vh;
+  }
+  .skills-row-contentRL {
+    width: calc(10rem * 20);
+    animation: scroll 45s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-10rem * 10));
+    }
+  }
+
+  .skills-row-contentLR {
+    width: calc(10rem * 20);
+    animation: scroll2 45s linear infinite;
+  }
+
+  @keyframes scroll2 {
+    0% {
+      transform: translateX(calc(-10rem * 10));
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}

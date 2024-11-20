@@ -1,91 +1,175 @@
-.Navbar{
+.Navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin: 2.75rem 6rem;
-  width: 100vw;
+  justify-content: space-between;
+  margin: 2.75rem;
+  width: 88vw;
 }
 
 .navbar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.email-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background-color: #222222;
+  color: #99989d;
+  height: 3rem;
+  width: 14rem;
+  border-radius: 2rem;
+  padding: 0.05rem;
+}
+
+.email-section span {
+  font-size: 0.7rem;
+  margin-left: 0.45rem;
+}
+
+.copy-btn {
+  height: 2.7rem;
+  width: 6rem;
+  font-size: 0.7rem;
+  border-radius: 2rem;
+  background-color: #a7a1a1;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background-color: #e9c3c3;
+}
+
+.cv-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+  height: auto;
+  width: auto;
+  padding: 0.2rem;
+  border-radius: 2rem;
+}
+
+.cv-btn {
+  height: 2.7rem;
+  width: 6rem;
+  border-radius: 2rem;
+  font-size: 0.7rem;
+  background-color: #a7a1a1;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.cv-btn:hover {
+  background-color: #ddd4d4;
+}
+
+.navbar_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: small;
+}
+
+.navbar_links span a {
+  text-decoration: none;
+  color: #99989d;
+}
+
+.navbar_links span {
+  margin: 0 5px;
+}
+
+.navbar_links span:hover a {
+  /* color: blue;  */
+  text-decoration: underline;
+}
+
+/* text-icon toggle */
+
+.navbar_links .icon {
+  display: none;
+}
+.navbar_links .icon svg {
+  height: 1.4rem;
+}
+
+.navbar_links .social-text {
+  display: inline;
+}
+.email-mobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .Navbar{
+    width: 95vw;
   }
-  
+  .navbar_links{
+    margin-right: 2vw;
+  }
+  .navbar_links .icon {
+    display: flex;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2643;
+  }
+
+  .navbar_links .social-text {
+    display: none;
+  }
+
+  .navbar-container{
+    margin-left: 2vw;
+    gap: 0.3rem;
+  }
   .email-section {
+    display: none;
+  }
+  .email-mobile {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: .6rem;
-    background-color: #3EEE5F;
-    height: 3rem;
-    width: 15rem;
-    border-radius: 2rem;
-    padding:.05rem;
-  }
-
-  .email-section span{
-    font-size: small;
-    margin-left: .45rem;
-  }
-  
-  .copy-btn {
-    height: 2.7rem;
-    width: 6rem;
-    border-radius: 2rem;
-    background-color: #007bff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .copy-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .cv-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #3EEE5F;
+    background-color: rgba(44, 38, 67, 0.5);
     height: auto;
-    width:auto;
-    padding:.2rem;
+    width: auto;
+    padding: 0.2rem;
     border-radius: 2rem;
   }
-  
-  .cv-btn {
-    height: 2.7rem;
-    width: 6rem;
+
+  .email-btn {
+    height: 2.4rem;
+    width: 5.2rem;
     border-radius: 2rem;
-    background-color: #007bff;
+    font-size: 0.7rem;
+    background-color: #2c2643;
+    color: #ffffff;
+    font-weight: 600;
     border: none;
     cursor: pointer;
   }
-  
-  .cv-btn:hover {
-    background-color: #218838;
+
+  .cv-btn {
+    height: 2.4rem;
+    width: 5.2rem;
   }
 
-  .navbar_links {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    font-family: Arial, sans-serif;
-    font-size: small;
+  .slash_nvb{
+    display: none;
   }
-  
-  .navbar_links span a {
-    text-decoration: none;
-    color: black; 
-  }
-  
-  .navbar_links span {
-    margin: 0 5px;
-  }
-  
-  .navbar_links span:hover a {
-    color: blue; 
-  }
-  
-  
+
+}

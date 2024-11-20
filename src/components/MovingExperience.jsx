@@ -1,5 +1,5 @@
 import React from "react";
-import "./MovingExperience.css"; 
+import "./MovingExperience.css";
 
 const MovingExperience = () => {
   const companies = [
@@ -16,14 +16,18 @@ const MovingExperience = () => {
     <div className="experience-container">
       <div className="company-list">
         {companies.map((company, index) => (
-          <span key={index} className="company">
-            {company}
-          </span>
+          <div className="companyDiv">
+            <span key={index} className="company">
+              {company}
+            </span>
+          </div>
         ))}
         {companies.map((company, index) => (
-          <span key={index + companies.length} className="company">
-            {company}
-          </span>
+          <div className="companyDiv">
+            <span key={index + companies.length} className="company">
+              {company}
+            </span>
+          </div>
         ))}
       </div>
     </div>

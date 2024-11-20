@@ -1,4 +1,4 @@
-.App{
+.App {
   display: flex;
   /* align-items: center; */
   flex-direction: column;
@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #6b86aa;
+  background-color: #000;
   border-bottom-left-radius: 5rem;
   border-bottom-right-radius: 5rem;
   height: 90vh;
@@ -21,7 +21,7 @@
   text-align: center;
 }
 
-.PN_cont{
+.PN_cont {
   position: relative;
 }
 .profile-pic {
@@ -31,7 +31,7 @@
   border: 5px solid white;
   margin: 4rem auto 1rem;
 }
-.name_cont{
+.name_cont {
   position: absolute;
   display: flex;
   align-items: center;
@@ -47,7 +47,8 @@
 }
 
 @keyframes oscillate {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(15px) rotate(-12deg);
   }
   50% {
@@ -55,35 +56,79 @@
   }
 }
 
-.name_header{
+.name_header {
   font-size: 16px;
 }
 
-
-.Headling_about{
-  font-size: 2.75rem;
-  font-weight: 600;
-  width: 50vw;
-  background-image: linear-gradient(97.0286deg, rgb(11, 11, 11) 0%, rgba(12, 12, 12, 0.55) 100%, rgba(12, 12, 12, 0.55) 100%);
+.Headling_about {
+  font-size: 2.8rem;
+  font-weight: 500;
+  width: 35vw;
+  background: #e0daef;
+  /* font-family: "Aeonik Medium", "Aeonik Medium Placeholder", sans-serif; */
+  font-family: "Otterco Display Medium", "Otterco Display Medium Placeholder",
+    sans-serif;
+  -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
+  word-break: break-word;
+  word-wrap: break-word;
 }
 
 .project-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .5vw;
+  gap: 0.5vw;
   margin-top: 4vh;
-  width: 12vw;
+  width: 9rem;
   height: 6vh;
   border: 0px;
-  background-color: #3EEE5F;
+  background-color: #a7a1a1;
   border-radius: 4rem;
   color: #030a12;
+  /* color: #f4f4f4; */
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .project-button:hover {
   background-color: #c3d0e0;
+}
+
+@media (min-width: 801px) and (max-width: 1061px) {
+  .profile-pic {
+    width: 6rem;
+    height: 6rem;
+  }
+  .Headling_about {
+    font-size: 2.2rem;
+    width: 40vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .home {
+    height: 75vh;
+  }
+  .profile-pic {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .Headling_about {
+    font-size: 1.9rem;
+    width: 330px;
+  }
+  .project-button {
+    width: 8rem;
+    font-size: 0.75rem;
+  }
+  .name_cont {
+    width: 8rem;
+    right: -80%;
+    animation: oscillate 10s ease-in-out infinite
+  }
+  .name_header {
+    font-size: 12px;
+  }
 }

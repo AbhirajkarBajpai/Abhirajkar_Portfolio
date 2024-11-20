@@ -4,17 +4,17 @@ import './Education.css';
 const Education = () => {
   const educationData = [
     {
-      year: 2021,
+      year: 2018,
       title: "High School",
       description: "Completed my 10th in year 2018 from BBS Internationals, Prayagraj, U.P, INDIA."
     },
     {
-      year: 2022,
+      year: 2020,
       title: "Intermediate",
-      description: "Completed my 10th in year 2018 from BBS Internationals, Prayagraj, U.P, INDIA."
+      description: "Completed my 12th in year 2020 from BBS Internationals, Prayagraj, U.P, INDIA."
     },
     {
-      year: 2023,
+      year: 2021,
       title: "Undergraduate",
       description: "Currently a final year undergraduate at Rajiv Gandhi Institute of Petroleum Technology(An Institute of National importance Establised by the Act of Parliament 2007.)"
     }

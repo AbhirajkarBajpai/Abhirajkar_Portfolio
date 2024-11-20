@@ -1,0 +1,116 @@
+.SkillCard {
+  width: 21rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2vh;
+  border-radius: 0.4rem;
+}
+
+.Sk_innerDiv {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 4px; */
+}
+.Sk_innerDiv span:nth-of-type(1) {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+.Sk_innerDiv span:nth-of-type(2) {
+  font-size: 0.9rem;
+  /* font-weight: bold; */
+  color: #f2dede;
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+  .SkillCard {
+    width: 34vw;
+    height: 13vw;
+    gap: 0px;
+  }
+  .Sk_innerDiv span:nth-of-type(1) {
+    font-size: 2.2vw;
+  }
+  .Sk_innerDiv span:nth-of-type(2) {
+    font-size: 1.2vw;
+  }
+}
+@media (max-width: 500px) {
+  .SkillCard {
+    width: 10rem;
+    height: 8rem;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .Sk_innerDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .Sk_innerDiv span:nth-of-type(1) {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .Sk_innerDiv span:nth-of-type(2) {
+    font-size: 0.5rem;
+    text-align: center;
+  }
+}
+
+.normal_bg {
+  background-color: #201c2c;
+}
+
+.webflow {
+  background-color: rgb(20, 110, 245, 0.3);
+}
+
+.figma {
+  background-color: rgb(162, 89, 255, 0.3);
+}
+
+.attributes {
+  background-color: rgb(185, 253, 59, 0.3);
+}
+
+.photoshop {
+  background-color: rgb(49, 168, 255, 0.3);
+}
+
+.illustrator {
+  background-color: rgb(255, 154, 0, 0.3);
+}
+
+.xd {
+  background-color: rgb(255, 97, 246, 0.3);
+}
+
+.vimeo {
+  background-color: rgb(0, 173, 239, 0.3);
+}
+
+.weglot {
+  background-color: rgb(71, 58, 224, 0.3);
+}
+
+.zapier {
+  background-color: rgb(255, 79, 0, 0.3);
+}
+
+.lottie {
+  background-color: rgb(0, 221, 179, 0.3);
+}
+
+.analytics {
+  background-color: rgb(248, 171, 0, 0.3);
+}
+
+.tagmanager {
+  background-color: rgb(36, 111, 219, 0.3);
+}

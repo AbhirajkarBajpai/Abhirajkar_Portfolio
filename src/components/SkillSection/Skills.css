@@ -1,0 +1,233 @@
+.skill_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d0d0d;
+  width: 100vw;
+  margin-top: -5rem;
+  padding-top: 5rem;
+}
+
+.skills-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 5vh;
+  width: 80vw;
+  padding: 2rem;
+  border: 0px;
+  border-radius: 2.5rem;
+  background-color: #f5f5f5;
+  transform: scale(0.6);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.skills-section.in-view {
+  transform: scale(1);
+}
+
+/* text hover effect starts here  */
+.skill_a {
+  white-space: pre;
+  font-family: "Aeonik Medium", "Aeonik Medium Placeholder", sans-serif;
+  color: rgb(5, 45, 35);
+  margin: 1rem 0;
+  text-decoration: none;
+}
+
+.skill_a span {
+  font-size: 40px;
+  letter-spacing: -0.01em;
+  line-height: 1.2em;
+  transition: all 0.5s;
+}
+
+.Skill_svg_contn {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  padding: 2px;
+  opacity: 0.5;
+  margin: 6vh;
+}
+
+.Skill_svg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.skill_text {
+  font-family: "Aeonik Regular", "Aeonik Regular Placeholder", sans-serif;
+  font-size: 50px;
+  letter-spacing: -0.04em;
+  line-height: 1em;
+  text-align: center;
+  color: rgb(5, 45, 35);
+}
+
+/* .SkillSet_contn {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+} */
+
+.SkillSet_contn{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 6rem;
+}
+
+
+
+.SkillSet {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+}
+
+.skillSet_img_contn{
+  height: 8rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  10% {
+    transform: scale(0.10);
+  }
+  20% {
+    transform: scale(0.20);
+  }
+  30% {
+    transform: scale(0.30);
+  }
+  40% {
+    transform: scale(0.40);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  60% {
+    transform: scale(0.6);
+  }
+  70% {
+    transform: scale(0.7);
+  }
+  80% {
+    transform: scale(0.8);
+  }
+  90% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.skillSet_img {
+  height: 100%;
+  object-fit: contain;
+  transform: scale(0);
+  animation: scaleUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.skillSet_img.visibleAndAnim{
+  opacity: 1;
+  /* transform: scale(1); */
+}
+
+
+.skillSet_img.visible {
+  opacity: 1;
+}
+
+
+.skill_serial {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin: 1vh;
+  width: 90%;
+}
+.skill_serial span {
+  font-family: "Aeonik Medium", "Aeonik Medium Placeholder", sans-serif;
+  font-size: 27px;
+  letter-spacing: -0.03em;
+  line-height: 1em;
+  color:  rgb(1, 26, 19);
+}
+.skill_serial hr {
+  flex-grow: 1;
+  border: none;
+  border-top: 3px solid #000;
+}
+
+.skillInfo {
+  height: auto;
+  position: relative;
+  white-space: pre-wrap;
+  width: 100%;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-family: "Aeonik Medium", "Aeonik Medium Placeholder", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 550;
+  line-height: 1.6em;
+  color: rgb(5, 45, 35);
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+  .skillSet_img_contn{
+    height: 5rem;
+    margin-bottom: 1rem;
+  } 
+  .skill_a span{
+    font-size: 30px;
+  }
+  .skillInfo{
+    font-size: .8rem;
+  }
+  .SkillSet_contn {
+    margin-top: 3rem;
+  }
+}
+
+
+@media (min-width: 751px) and (max-width: 800px){
+  .skill_serial span{
+    font-size: 20px;
+  }
+  .skillSet_img_contn{
+    height: 3.5rem;
+    margin-bottom: 1rem;
+  } 
+  .skill_a span{
+    font-size: 25px;
+  }
+}
+
+@media (max-width:750px) {
+  .skills-section{
+    width: 70vw;
+  }
+  .SkillSet_contn {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 7vh;
+    margin-top: 8vh;
+  }
+  .skill_text{
+    font-size: 5vh;
+  }
+  .skillSet_img_contn{
+    height: 14vh;
+  } 
+}
