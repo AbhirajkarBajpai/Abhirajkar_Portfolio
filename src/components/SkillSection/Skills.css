@@ -216,18 +216,32 @@
 }
 
 @media (max-width:750px) {
+  .Skill_svg_contn{
+    height:4rem;
+    width: 4rem;
+    margin: 3vh;
+  }
   .skills-section{
     width: 70vw;
   }
   .SkillSet_contn {
     grid-template-columns: repeat(1, 1fr);
     gap: 7vh;
-    margin-top: 8vh;
+    margin-top: 5vh;
   }
   .skill_text{
-    font-size: 5vh;
+    font-size: 4vh;
   }
   .skillSet_img_contn{
-    height: 14vh;
+    height: 10vh;
   } 
+  .skill_serial span{
+    font-size: 20px;
+  }
+  .skill_a span { 
+    font-size: 30px;
+  }
+ .skillInfo{
+  font-size: .85rem;
+ } 
 }
