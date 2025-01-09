@@ -5,43 +5,51 @@ import img2 from "../../assets/img/EVM.png";
 import img3 from "../../assets/img/onLibrary.png";
 import img4 from "../../assets/img/Make_Notes.jfif";
 import img5 from "../../assets/img/TrackingDapp.jfif";
+import img6 from "../../assets/img/Contri.png";
 import "./ProjectPage.css";
 import ProjectCard from "../ProjectCard";
 
 const projects = [
   {
-    image: img3,
-    title: "OnLibrary",
+    image: img6,
+    title: "Contri: Expense Splitting WebApp",
     description:
-      "Created full-stack e-book reader that allows users to read and bookmark....",
-      link:'https://github.com/AbhirajkarBajpai/OnLibrary-E-Book-Reader-',
+      "Provides advanced group management features to divide spending, alter...",
+    link: "https://github.com/AbhirajkarBajpai/contri",
   },
   {
     image: img4,
     title: "Notes WebApp",
     description:
       "webApp that allows users to create, edit, and delete notes. This uses..",
-      link:'https://github.com/AbhirajkarBajpai/NOTEITPHY',
+    link: "https://github.com/AbhirajkarBajpai/NOTEITPHY",
   },
   {
     image: img1,
     title: "BFTI webApp",
     description: "Webapp Developed to identify and flag potentially...",
-    link:'https://github.com/AbhirajkarBajpai/Fraud_detection_Webapp',
+    link: "https://github.com/AbhirajkarBajpai/Fraud_detection_Webapp",
   },
   {
     image: img2,
     title: "E-voting Dapp",
     description:
       "This Application (Dapp) built on the Ethereum blockchain for conducting...",
-      link:'https://github.com/AbhirajkarBajpai/E-Voting_Dapp',
+    link: "https://github.com/AbhirajkarBajpai/E-Voting_Dapp",
+  },
+  {
+    image: img3,
+    title: "OnLibrary",
+    description:
+      "Created full-stack e-book reader that allows users to read and bookmark....",
+    link: "https://github.com/AbhirajkarBajpai/OnLibrary-E-Book-Reader-",
   },
   {
     image: img5,
     title: "Tracking Dapp",
     description:
       "allows users to securely and transparently track products sent from a sender to a receiver..",
-      link:'https://github.com/AbhirajkarBajpai/Tracking_Dapp',
+    link: "https://github.com/AbhirajkarBajpai/Tracking_Dapp",
   },
 ];
 
@@ -141,9 +149,15 @@ const ProjectPage = () => {
         <strong>Popular</strong>
         <span>cases</span>
         <div className="proj_contn_s2PP">
-        {projects.map((items)=>{
-          return <ProjectCard projectImage={items.image} projectName={items.title} projectInfo={items.description}/>
-        })}
+          {projects.map((items) => {
+            return (
+              <ProjectCard
+                projectImage={items.image}
+                projectName={items.title}
+                projectInfo={items.description}
+              />
+            );
+          })}
         </div>
       </div>
     </div>
