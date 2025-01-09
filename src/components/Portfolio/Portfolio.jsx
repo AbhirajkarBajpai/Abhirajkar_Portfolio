@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import img1 from "../../assets/img/Fraud_Detection.png";
 import img2 from "../../assets/img/EVM.png";
 import img3 from "../../assets/img/onLibrary.png";
+import img4 from "../../assets/img/Contri.png";
 import "./Portfolio.css";
 
 const Portfolio = (props) => {
@@ -12,6 +13,13 @@ const Portfolio = (props) => {
       description:
         "In this Webapp Developed a comprehensive Fraud Detection Web App to identify and flag potentially fraudulent transactions in a ...",
       link: "https://github.com/AbhirajkarBajpai/Fraud_detection_Webapp",
+    },
+    {
+      image: img4,
+      title: "Contri: Expense Splitting WebApp",
+      description:
+        "The Webapp Developed with added advanced group management features to divide spending, alter manual amounts, and view real-time summary...",
+      link: "https://github.com/AbhirajkarBajpai/contri",
     },
     {
       image: img2,
