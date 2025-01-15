@@ -3,18 +3,18 @@ import img1 from "../../assets/img/Fraud_Detection.png";
 import img2 from "../../assets/img/EVM.png";
 import img3 from "../../assets/img/onLibrary.png";
 import img4 from "../../assets/img/Contri.png";
-import img5 from "../../assets/img/Draww.png";
+import img5 from "../../assets/img/Draww.jpg";
 import "./Portfolio.css";
 
 const Portfolio = (props) => {
   const [projects] = useState([
-    {
-      image: img1,
-      title: "Bank Financial Transaction Fraud Investigation WebApp",
-      description:
-        "In this Webapp Developed a comprehensive Fraud Detection Web App to identify and flag potentially fraudulent transactions in a ...",
-      link: "https://github.com/AbhirajkarBajpai/Fraud_detection_Webapp",
-    },
+    // {
+    //   image: img1,
+    //   title: "Bank Financial Transaction Fraud Investigation WebApp",
+    //   description:
+    //     "In this Webapp Developed a comprehensive Fraud Detection Web App to identify and flag potentially fraudulent transactions in a ...",
+    //   link: "https://github.com/AbhirajkarBajpai/Fraud_detection_Webapp",
+    // },
     {
       image: img4,
       title: "Contri: Expense Splitting WebApp",
@@ -36,13 +36,13 @@ const Portfolio = (props) => {
         "This project is a Distributed Application (Dapp) built on the Ethereum blockchain for conducting electronic voting. The goal of this Dapp is to ensure the transparency...",
       link: "https:github.com/AbhirajkarBajpai/E-Voting_Dapp",
     },
-    {
-      image: img3,
-      title: "OnLibrary-online Book Reading Platform",
-      description:
-        "I have Created full-stack e-book reader that allows users to read and bookmark a diverse selection of books online....",
-      link: "https://github.com/AbhirajkarBajpai/OnLibrary-E-Book-Reader-",
-    },
+    // {
+    //   image: img3,
+    //   title: "OnLibrary-online Book Reading Platform",
+    //   description:
+    //     "I have Created full-stack e-book reader that allows users to read and bookmark a diverse selection of books online....",
+    //   link: "https://github.com/AbhirajkarBajpai/OnLibrary-E-Book-Reader-",
+    // },
   ]);
 
   // Track current page
