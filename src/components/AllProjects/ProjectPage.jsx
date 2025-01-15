@@ -6,6 +6,7 @@ import img3 from "../../assets/img/onLibrary.png";
 import img4 from "../../assets/img/Make_Notes.jfif";
 import img5 from "../../assets/img/TrackingDapp.jfif";
 import img6 from "../../assets/img/Contri.png";
+import img7 from "../../assets/img/Draww.png";
 import "./ProjectPage.css";
 import ProjectCard from "../ProjectCard";
 
@@ -16,6 +17,13 @@ const projects = [
     description:
       "Provides advanced group management features to divide spending, alter...",
     link: "https://github.com/AbhirajkarBajpai/contri",
+  },
+  {
+    image: img7,
+    title: "Draww: Interactive Game",
+    description:
+      "provides a fun and engaging way to challenge friends by creating and solving drawing...",
+    link: "https://github.com/AbhirajkarBajpai/Draww",
   },
   {
     image: img4,

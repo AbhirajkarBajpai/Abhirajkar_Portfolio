@@ -3,6 +3,7 @@ import img1 from "../../assets/img/Fraud_Detection.png";
 import img2 from "../../assets/img/EVM.png";
 import img3 from "../../assets/img/onLibrary.png";
 import img4 from "../../assets/img/Contri.png";
+import img5 from "../../assets/img/Draww.png";
 import "./Portfolio.css";
 
 const Portfolio = (props) => {
@@ -20,6 +21,13 @@ const Portfolio = (props) => {
       description:
         "The Webapp Developed with added advanced group management features to divide spending, alter manual amounts, and view real-time summary...",
       link: "https://github.com/AbhirajkarBajpai/contri",
+    },
+    {
+      image: img5,
+      title: "Draww: Interactive Game",
+      description:
+        "Draww is an interactive and creative game that provides a fun and engaging way to challenge friends by creating and solving drawing-based puzzles",
+      link: "https://github.com/AbhirajkarBajpai/Draww",
     },
     {
       image: img2,
