@@ -4,7 +4,7 @@ import './ProjectCard.css';
 
 const ProjectCard = (props) => {
   return (
-    <div className="project-card_PP">
+    <div className="project-card_PP" onClick={()=>window.open(props.projectLink)}>
       <div className="project-card-image_PP">
         <img src={props.projectImage} alt="SpinApp" />
       </div>

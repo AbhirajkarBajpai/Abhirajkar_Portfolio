@@ -163,6 +163,7 @@ const ProjectPage = () => {
                 projectImage={items.image}
                 projectName={items.title}
                 projectInfo={items.description}
+                projectLink={items.link}
               />
             );
           })}
