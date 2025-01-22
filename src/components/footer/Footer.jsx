@@ -35,7 +35,7 @@ const Footer = () => {
                   <span class="location-text">BANGLORE, INDIA</span>
                 </div>
                 <div class="social-icons">
-                  <a href="https://www.linkedin.com" target="_blank">
+                  <a href="https://www.linkedin.com/in/abhirajkar-bajpai-b46736228/" target="_blank">
                     <img
                       src="https://cdn.prod.website-files.com/636423ea1c03ca74c0a976d7/646e2cb9c7a44a26efc89fee_icon-linkedin.svg"
                       loading="lazy"
@@ -44,7 +44,7 @@ const Footer = () => {
                       _msthash="199"
                     />
                   </a>
-                  <a href="https://www.instagram.com" target="_blank">
+                  <a href="https://www.instagram.com/abhirajkar_27_7" target="_blank">
                     <img
                       src="https://cdn.prod.website-files.com/636423ea1c03ca74c0a976d7/6472f62e038ebc884e13458c_icon-social-insta-v4.svg"
                       loading="lazy"
