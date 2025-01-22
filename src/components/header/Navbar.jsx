@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const email = "21IT3001@rgipt.ac.in";
-  const cvLink = "https://drive.google.com/drive/folders/1NauuWGAXj6ZpFpQktdIvnp1SKdRFGt9Y";
+  const cvLink = "https://drive.google.com/file/d/1vJXiAhDUL6Ne9JYeRYh5e8J8X-y_dBsT/view?usp=drive_link";
 
   const [buttonText, setButtonText] = useState("Copy");
 
