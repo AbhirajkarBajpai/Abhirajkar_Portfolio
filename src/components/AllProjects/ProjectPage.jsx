@@ -109,7 +109,7 @@ const ProjectPage = () => {
                 <span>{projects[currentProject].description}</span>
               </div>
             </div>
-            <div className="proj_github">
+            <div className="proj_github" onClick={()=>window.open(projects[currentProject].link)}>
               <svg
                 fill="#fff"
                 data-name="1-Arrow Up"
