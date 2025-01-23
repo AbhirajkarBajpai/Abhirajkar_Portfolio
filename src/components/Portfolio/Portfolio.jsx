@@ -90,44 +90,51 @@ const Portfolio = (props) => {
 
   return (
     <div className="portfolio_contn">
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
-        transition={{ duration: 0.5 }}
-      >
-        <div className="upperSection_pc">
-          <div className="leftPart_pc">
-            <span>My Portfolio</span>
-            <span>
-              Latest
-              <br />
-              Cases
-            </span>
-          </div>
-          <div className="rightPart_pc">
-            <div class="search-container">
-              <input
-                type="text"
-                placeholder="Search cases..."
-                class="search-input"
-              />
-              <span class="search-icon">&#x2197;</span>
-            </div>
-          </div>
+      <div className="upperSection_pc">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="leftPart_pc"
+        >
+          <span>My Portfolio</span>
+          <span>
+            Latest
+            <br />
+            Cases
+          </span>
+        </motion.div>
+        <div className="rightPart_pc">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            className="search-container"
+          >
+            <input
+              type="text"
+              placeholder="Search cases..."
+              className="search-input"
+            />
+            <span className="search-icon">&#x2197;</span>
+          </motion.div>
         </div>
-      </motion.div>
+      </div>
+
       <div className="lowerSection_pc">
         {visibleProjects.map((project, index) => (
-          <div
-            onClick={() => window.open(project?.link)}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: index * 0.5 }} 
             key={index}
+            onClick={() => window.open(project?.link)}
             className="project-card"
           >
             <img src={project.image} alt={project.title} />
             <h2>{project.title}</h2>
             <p>{project.description}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
 
