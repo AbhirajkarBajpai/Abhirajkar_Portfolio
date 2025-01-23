@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import img1 from "../../assets/img/Fraud_Detection.png";
 import img2 from "../../assets/img/EVM.png";
 import img3 from "../../assets/img/onLibrary.png";
@@ -89,27 +90,33 @@ const Portfolio = (props) => {
 
   return (
     <div className="portfolio_contn">
-      <div className="upperSection_pc">
-        <div className="leftPart_pc">
-          <span>My Portfolio</span>
-          <span>
-            Latest
-            <br />
-            Cases
-          </span>
-        </div>
-        <div className="rightPart_pc">
-          <div class="search-container">
-            <input
-              type="text"
-              placeholder="Search cases..."
-              class="search-input"
-            />
-            <span class="search-icon">&#x2197;</span>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="upperSection_pc">
+          <div className="leftPart_pc">
+            <span>My Portfolio</span>
+            <span>
+              Latest
+              <br />
+              Cases
+            </span>
+          </div>
+          <div className="rightPart_pc">
+            <div class="search-container">
+              <input
+                type="text"
+                placeholder="Search cases..."
+                class="search-input"
+              />
+              <span class="search-icon">&#x2197;</span>
+            </div>
           </div>
         </div>
-      </div>
-
+      </motion.div>
       <div className="lowerSection_pc">
         {visibleProjects.map((project, index) => (
           <div
