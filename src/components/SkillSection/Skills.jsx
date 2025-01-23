@@ -7,9 +7,7 @@ import Lens from "../../assets/img/lens.png";
 
 function SkillsSection() {
   const sectionRef = useRef(null);
-  const imgRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [hasAnimated, setHasAnimated] = useState(false);
   const [isScaled, setIsScaled] = useState(false);
   const skills = [
     {
@@ -63,8 +61,7 @@ function SkillsSection() {
           <img
             src={imgSrc}
             alt="Dev_img"
-            className={`skillSet_img ${isVisible ? "visible" : ""}`}
-            ref={imgRef}
+            className="skillSet_img"
           />
         </div>
         <div className="skill_serial">
@@ -76,32 +73,6 @@ function SkillsSection() {
       </div>
     );
   };
-
-  useEffect(() => {
-    // if (window.outerWidth > 800) {
-      const handleScroll = () => {
-        if (imgRef.current && !hasAnimated) {
-          const rect = imgRef.current.getBoundingClientRect();
-          // Check if the image is in the viewport
-          if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-            setIsVisible(true);
-            setHasAnimated(true); // Ensure the animation only triggers once
-            window.removeEventListener("scroll", handleScroll);
-          }
-        }
-      };
-
-      window.addEventListener("scroll", handleScroll);
-      // Check visibility on component mount
-      handleScroll();
-
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    // } else {
-    //   console.log("console hit on change of isScaled");
-    // }
-  }, [hasAnimated]);
 
   useEffect(() => {
     if (window.outerWidth > 800) {

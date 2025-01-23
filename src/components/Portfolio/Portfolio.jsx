@@ -108,7 +108,7 @@ const Portfolio = (props) => {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
+            transition={{ duration: 0.4 }}
             className="search-container"
           >
             <input
@@ -126,7 +126,7 @@ const Portfolio = (props) => {
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: index * 0.5 }} 
+            transition={{ duration: 0.4, delay: index * 0.3 }} 
             key={index}
             onClick={() => window.open(project?.link)}
             className="project-card"

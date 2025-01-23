@@ -135,21 +135,10 @@
 .skillSet_img {
   height: 100%;
   object-fit: contain;
-  transform: scale(0);
-  animation: scaleUp 0.8s ease forwards;
-  opacity: 0;
-}
-
-.skillSet_img.visibleAndAnim{
-  opacity: 1;
-  /* transform: scale(1); */
-}
-
-
-.skillSet_img.visible {
+  /* transform: scale(0);
+  animation: scaleUp 0.8s ease forwards; */
   opacity: 1;
 }
-
 
 .skill_serial {
   display: flex;
