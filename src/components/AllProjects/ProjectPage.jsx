@@ -5,7 +5,7 @@ import img2 from "../../assets/img/EVM.png";
 import img3 from "../../assets/img/onLibrary.png";
 import img4 from "../../assets/img/Make_Notes.jfif";
 import img5 from "../../assets/img/TrackingDapp.jfif";
-import img6 from "../../assets/img/Contri.png";
+import img6 from "../../assets/img/Contri.jpg";
 import img7 from "../../assets/img/Draww.jpg";
 import "./ProjectPage.css";
 import ProjectCard from "../ProjectCard";
