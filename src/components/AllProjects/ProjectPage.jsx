@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import caseContainer from "../../assets/img/Project_cont.png";
-import img1 from "../../assets/img/Fraud_Detection.png";
-import img2 from "../../assets/img/EVM.png";
+import img1 from "../../assets/img/Fraud_Detection.jpg";
+import img2 from "../../assets/img/EVM.jpg";
 import img3 from "../../assets/img/onLibrary.png";
 import img4 from "../../assets/img/Make_Notes.jfif";
 import img5 from "../../assets/img/TrackingDapp.jfif";

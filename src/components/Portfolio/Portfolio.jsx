@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import img1 from "../../assets/img/Fraud_Detection.png";
-import img2 from "../../assets/img/EVM.png";
+import img1 from "../../assets/img/Fraud_Detection.jpg";
+import img2 from "../../assets/img/EVM.jpg";
 import img3 from "../../assets/img/onLibrary.png";
 import img4 from "../../assets/img/Contri.jpg";
 import img5 from "../../assets/img/Draww.jpg";
